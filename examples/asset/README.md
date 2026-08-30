@@ -158,7 +158,8 @@ module.exports = config;
   !*** ./images/file.png ***!
   \*************************/
 /*! default exports */
-/*! exports [not provided] [no usage info] */
+/*! export default [not provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
 /*! runtime requirements: __webpack_require__.p, module, __webpack_require__.* */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -170,7 +171,8 @@ module.exports = __webpack_require__.p + "images/89a353e9c515885abd8e.png";
   !*** ./images/file.jpg ***!
   \*************************/
 /*! default exports */
-/*! exports [not provided] [no usage info] */
+/*! export default [not provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
 /*! runtime requirements: module */
 /***/ ((module) => {
 
@@ -182,7 +184,8 @@ module.exports = "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAASABIAA...4CD/9M//Z"
   !*** ./images/file.svg ***!
   \*************************/
 /*! default exports */
-/*! exports [not provided] [no usage info] */
+/*! export default [not provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
 /*! runtime requirements: module */
 /***/ ((module) => {
 
@@ -206,7 +209,8 @@ module.exports = __webpack_require__.p + "images/afc10c70ed4ce2b33593.svg";
   !*** ./content/file.text ***!
   \***************************/
 /*! default exports */
-/*! exports [not provided] [no usage info] */
+/*! export default [not provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
 /*! runtime requirements: module */
 /***/ ((module) => {
 
@@ -218,7 +222,8 @@ module.exports = "a Ā 𐀀 文 🦄 Text\n";
   !*** ./content/bytes.svg ***!
   \***************************/
 /*! default exports */
-/*! exports [not provided] [no usage info] */
+/*! export default [not provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
 /*! runtime requirements: __webpack_require__.*, __webpack_require__.tb, module */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -261,20 +266,16 @@ module.exports = __webpack_require__.tb("PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmc
 /******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
-/******/ 	(() => {
-/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
-/******/ 	})();
+/******/ 	__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop));
 /******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
-/******/ 	(() => {
-/******/ 		// define __esModule on exports
-/******/ 		__webpack_require__.r = (exports) => {
-/******/ 			if(Symbol.toStringTag) {
-/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
-/******/ 			}
-/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
-/******/ 		};
-/******/ 	})();
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = (exports) => {
+/******/ 		if(Symbol.toStringTag) {
+/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		}
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
 /******/ 	
 /******/ 	/* webpack/runtime/to binary */
 /******/ 	(() => {
@@ -306,9 +307,7 @@ module.exports = __webpack_require__.tb("PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmc
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/publicPath */
-/******/ 	(() => {
-/******/ 		__webpack_require__.p = "dist/";
-/******/ 	})();
+/******/ 	__webpack_require__.p = "dist/";
 /******/ 	
 /******/ 	/* webpack/runtime/jsonp chunk loading */
 /******/ 	(() => {
@@ -485,13 +484,13 @@ files.forEach(item => {
 ## webpack output
 
 ```
-asset output.js 19.8 KiB [emitted] (name: main)
+asset output.js 20.1 KiB [emitted] (name: main)
 asset images/89a353e9c515885abd8e.png 14.6 KiB [emitted] [immutable] [from: images/file.png] (auxiliary name: main)
 asset images/afc10c70ed4ce2b33593.svg 656 bytes [emitted] [immutable] [from: images/url.svg] (auxiliary name: main)
-chunk (runtime: main) output.js (main) 12.4 KiB (javascript) 15.2 KiB (asset) 1.82 KiB (runtime) [entry] [rendered]
+chunk (runtime: main) output.js (main) 12.4 KiB (javascript) 15.2 KiB (asset) 1.83 KiB (runtime) [entry] [rendered]
   > ./example.js main
   dependent modules 9.59 KiB (javascript) 15.2 KiB (asset) [dependent] 6 modules
-  runtime modules 1.82 KiB 5 modules
+  runtime modules 1.83 KiB 5 modules
   ./example.js 2.85 KiB [built] [code generated]
     [no exports]
     [used exports unknown]
